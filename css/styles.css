@@ -18,7 +18,7 @@ html{
 
 
 body{
-    background: repeat url(../images/fond/global.png);
+    background: repeat url(../images/fond/global.png) #000;
     font: 400 1rem "Oranienbaum";
     color: #fff;
 }
@@ -50,10 +50,21 @@ a:hover{
 
 header, section{
 min-height: 100vh;
+
 }
 
-
-
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+header a{
+    position: absolute;
+    left: calc(50% - 50px);
+    bottom: 40px;
+}
 /*---------------------------------------
                 Section Générale
  ---------------------------------------*/
