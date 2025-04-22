@@ -4,7 +4,7 @@
 
 html{
     box-sizing: border-box;
-    
+    scroll-behavior: smooth;
 }
 
 *,*:before,*:after{
@@ -21,6 +21,7 @@ body{
     background: repeat url(../images/fond/global.png) #000;
     font: 400 1rem "Oranienbaum" ;
     color: #fff;
+    background-attachment: fixed;
 }
 a{
     color: #fff;
@@ -114,6 +115,7 @@ div.images a img{
 
 section.sports {
     background: url(../images/fond/bicycles.png);
+    background-attachment: fixed ;
 }
 
 
@@ -133,6 +135,7 @@ div.boite{
 
 section.web{
     background: url(../images/fond/science.png) ;
+    background-attachment: fixed;
    
 }
 
@@ -161,6 +164,7 @@ section.web .lien_float{
 
 section.photos{
     background: no-repeat center url(../images/fond/fond.jpg) ;
+    background-attachment: fixed;
     background-size: cover;
 }
 section.photos div.images img{
@@ -179,4 +183,22 @@ section.photos div.images{
 /*---------------------------------------
     Icône retour
 ---------------------------------------*/
-
+a.haut{
+    height: 40px;
+    width: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 4px solid #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 15vw;
+    
+}
+a.haut:hover{
+    color: darkorange;
+    border-color: darkorange;
+    
+}
