@@ -38,7 +38,9 @@ h2{
     margin: 0;
     text-transform: uppercase;
 }
-
+a[hreflang="ja"]::after {
+    content: " [en japonais]";
+}
 /*------------------------------------------------------------------------------
    Modules
 ------------------------------------------------------------------------------*/
@@ -157,10 +159,24 @@ section.web .lien_float{
 
 /* INSÉREZ VOTRE CSS POUR CETTE SECTION ICI */
 
-
-
+section.photos{
+    background: no-repeat center url(../images/fond/fond.jpg) ;
+    background-size: cover;
+}
+section.photos div.images img{
+width: 30%;
+}
+section.photos div.images a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.photos div.images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /*---------------------------------------
     Icône retour
 ---------------------------------------*/
-
 
