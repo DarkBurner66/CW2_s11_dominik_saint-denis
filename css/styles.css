@@ -4,7 +4,7 @@
 
 html{
     box-sizing: border-box;
-    font-size: 62.5%;
+    
 }
 
 *,*:before,*:after{
@@ -19,7 +19,7 @@ html{
 
 body{
     background: repeat url(../images/fond/global.png) #000;
-    font: 400 1rem "Oranienbaum";
+    font: 400 1rem "Oranienbaum" ;
     color: #fff;
 }
 a{
@@ -30,15 +30,20 @@ a:hover{
     color: darkorange;
 }
 
-
+h1{
+    font: 6.25rem "Monoton", "Roboto";
+}
+h2{
+    font: 2rem "Monoton", "Roboto";
+    margin: 0;
+    text-transform: uppercase;
+}
 
 /*------------------------------------------------------------------------------
    Modules
 ------------------------------------------------------------------------------*/
 
 /* INSÉREZ VOTRE CSS POUR CETTE SECTION ICI */
-
-
 
 
 
@@ -62,7 +67,7 @@ header{
 }
 header a{
     position: absolute;
-    left: calc(50% - 50px);
+    left: calc(50% - 75px);
     bottom: 40px;
 }
 /*---------------------------------------
@@ -71,8 +76,33 @@ header a{
 
 /* INSÉREZ VOTRE CSS POUR CETTE SECTION ICI */
 
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
 
+h2 span{
+    font: 1.063rem "Oranienbaum", "Roboto";
+    text-transform: none;
+}
 
+div.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+div.images a{
+    width: 200px;
+    margin: 10px 0;
+    text-align: center;
+}
+div.images a img{
+    width: 100%;
+    margin-bottom: 10px;
+}
 
 /*---------------------------------------
                 Section sports
@@ -80,7 +110,9 @@ header a{
 
 /* INSÉREZ VOTRE CSS POUR CETTE SECTION ICI */
 
-
+section.sports {
+    background: url(../images/fond/bicycles.png);
+}
 
 
 
@@ -97,10 +129,28 @@ div.boite{
     border-radius: 10px;
 }
 
+section.web{
+    background: url(../images/fond/science.png) ;
+   
+}
 
+section.web a img{
+    width: 50%;
+}
+section.web div.images a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-
-
+section.web div.images{
+    margin-bottom: 50px;
+}
+section.web .lien_float{
+    background: darkred;
+    padding: 10px;
+    text-align: center;
+}
 /*---------------------------------------
              Section photographie
  ---------------------------------------*/
